@@ -1,8 +1,8 @@
-# N8N Workflows Vault
+# n8n Workflows Vault
 
-Private repository for production N8N workflow JSON files.
+> Production n8n workflow JSON files for AI video, image generation, and content automation systems.
 
-> **Public portfolio:** [github.com/copywebltd/n8n-ai-workflows](https://github.com/copywebltd/n8n-ai-workflows)
+**Public portfolio:** [github.com/copywebltd/n8n-ai-workflows](https://github.com/copywebltd/n8n-ai-workflows)
 
 ---
 
@@ -25,14 +25,14 @@ workflows/
 ### Importing a Workflow
 
 1. Download the `.json` file from this repo
-2. In N8N: **Workflows** → **Import from File**
+2. In n8n: **Workflows** > **Import from File**
 3. Select the downloaded file
 4. Update credentials (they don't transfer)
 
 ### Exporting a Workflow
 
-1. Open workflow in N8N
-2. Click **⋮** (three dots menu) → **Download**
+1. Open workflow in n8n
+2. Click **...** (three dots menu) > **Download**
 3. Rename file descriptively
 4. Upload to appropriate folder here
 
@@ -53,9 +53,7 @@ Examples:
 
 ## Credential Notes
 
-⚠️ **Credentials are NOT included in exports** — this is intentional for security.
-
-After importing, you'll need to reconnect:
+Credentials are NOT included in exports for security. After importing, you'll need to reconnect:
 - Kie.ai API key
 - Google Sheets OAuth
 - Telegram Bot token
@@ -67,7 +65,7 @@ After importing, you'll need to reconnect:
 ## Systems Index
 
 ### 1. AI Content Pipeline
-*Google Sheets → Image Preview → Human Approval → Video Generation*
+*Google Sheets > Image Preview > Human Approval > Video Generation*
 
 | Workflow | File | Description |
 |----------|------|-------------|
@@ -82,7 +80,7 @@ After importing, you'll need to reconnect:
 | Wan 2.5 | `video-generation/wan25.json` | Alibaba video generation |
 
 ### 2. Motion Ads System
-*Single image → 9 motion video variations*
+*Single image > 9 motion video variations*
 
 | Workflow | File | Description |
 |----------|------|-------------|
@@ -92,30 +90,13 @@ After importing, you'll need to reconnect:
 | Batch Kling | `motion-ads/batch-kling-generator.json` | Parallel processing |
 
 ### 3. Content Repurposing Engine
-*Telegram → Gemini Analysis → Scripts/Videos → Social*
+*Telegram > Gemini Analysis > Scripts/Videos > Social*
 
 | Workflow | File | Description |
 |----------|------|-------------|
-| TikTok → Sora | `content-repurposing/tiktok-to-sora.json` | Video remix generator |
-| YT Short → Script | `content-repurposing/youtube-short-to-script.json` | Script generator |
-| YT Long → Social | `content-repurposing/youtube-long-to-social.json` | LinkedIn/Twitter posts |
-
----
-
-## Version History
-
-| Date | Changes |
-|------|---------|
-| Dec 2024 | Initial upload - all production workflows |
-
----
-
-## Security
-
-- ✅ Repo is **private**
-- ✅ No credentials in JSON files
-- ✅ No API keys committed
-- ⚠️ Don't make this repo public
+| TikTok > Sora | `content-repurposing/tiktok-to-sora.json` | Video remix generator |
+| YT Short > Script | `content-repurposing/youtube-short-to-script.json` | Script generator |
+| YT Long > Social | `content-repurposing/youtube-long-to-social.json` | LinkedIn/Twitter posts |
 
 ---
 
